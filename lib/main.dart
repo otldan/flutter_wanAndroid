@@ -1,13 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/page/home/home_page.dart';
 import 'package:flutter_app/res/strings.dart';
-import 'home/home_page.dart';
 import 'res/colors.dart';
 
 
 void main() => runApp(MyApp());
+bool bmobEnable = false;
+bool _blocDebug = true;
+final GlobalKey<NavigatorState> navigatorKey = new GlobalKey<NavigatorState>();
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
+
+
   @override
   Widget build(BuildContext context) {
 
@@ -22,7 +27,6 @@ class MyApp extends StatelessWidget {
     );
   }
 
-  final GlobalKey<NavigatorState> navigatorKey = new GlobalKey<NavigatorState>();
   /**
    * 路由集合
    */

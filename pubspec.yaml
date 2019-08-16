@@ -27,6 +27,17 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  bloc: ^0.14.4
+  equatable: ^0.2.6
+  flutter_bloc: ^0.18.3
+  json_annotation: ^2.4.0
+  shared_preferences: ^0.5.3+1
+  dio: ^2.1.7
+
+  data_plugin:
+    git:
+      url: https://github.com/CCY0122/bmob-flutter-sdk.git
+      path: data_plugin/
 
 
 # For information on the generic Dart part of this file, see the
