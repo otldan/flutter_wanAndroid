@@ -1,6 +1,7 @@
 
 import 'dart:io';
 import 'package:dio/dio.dart';
+import 'package:flutter_app/http/wanandroid_error_interceptors.dart';
 import 'api.dart';
 import 'log_interceptiors.dart';
 
@@ -15,6 +16,8 @@ class DioUtils{
     dio.options.sendTimeout = 5 *1000;
     dio.options.receiveTimeout =3 * 1000;
     dio.interceptors.add(LogsInterceptors());
+    dio.interceptors.add(WanAndroidErrorInterceptors());
+//    Directory temDir = await getTemporaryDirectory();
 
   }
 }
